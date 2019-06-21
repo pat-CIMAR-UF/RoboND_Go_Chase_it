@@ -1,1 +1,2 @@
-# RoboND_Go_Chase_it
+# RoboND
+Project of Go Chase It
