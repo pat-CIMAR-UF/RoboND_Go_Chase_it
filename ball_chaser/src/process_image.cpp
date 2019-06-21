@@ -52,11 +52,11 @@ void process_image_callback(const sensor_msgs::Image img)
     else {
         int x_average = x_sum / num_white;
         if (x_average < img.width / 3)
-            drive_robot(0.5, 0.5); //Turn left
+            drive_robot(0.1, 0.5); //Turn left
         else if ((x_average >= img.width / 3) && (x_average < img.width * 2 / 3))
             drive_robot(0.5, 0); //Straight
         else 
-            drive_robot(0.5, -0.5);  //Turn right
+            drive_robot(0.1, -0.5);  //Turn right
 
 
     }
